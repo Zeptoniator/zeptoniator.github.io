@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zeptoniator — Applications Android</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh;
+      font-family: -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+      display: grid; place-items: center; padding: 2rem;
+      background: #0f1513; color: #f7f3ea;
+    }
+    main { max-width: 40rem; width: 100%; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .25rem; color: #7fc9a3; }
+    p.lead { margin: 0 0 2rem; color: #d9cfb8; font-size: 1.05rem; }
+    ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; }
+    a.app {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 1.25rem; border-radius: 14px; text-decoration: none;
+      background: #1b2320; color: #f7f3ea; border: 1px solid #2e5a48;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    a.app:hover { transform: translateY(-2px); border-color: #d3a35e; }
+    a.app span.arrow { color: #d3a35e; }
+    footer { margin-top: 2.5rem; font-size: .85rem; color: #8a9a90; }
+    footer a { color: #7fc9a3; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Zeptoniator</h1>
+    <p class="lead">Applications Android — jeux et outils.</p>
+    <ul>
+      <li><a class="app" href="./PodcastApp/">PodcastApp — Podcasts audio <span class="arrow">→</span></a></li>
+      <li><a class="app" href="./snake-retro/">Snake Retro <span class="arrow">→</span></a></li>
+    </ul>
+    <footer>
+      Développeur d'applications mobiles ·
+      <a href="./app-ads.txt">app-ads.txt</a>
+    </footer>
+  </main>
+</body>
+</html>
