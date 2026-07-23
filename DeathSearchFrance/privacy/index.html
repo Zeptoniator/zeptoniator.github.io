@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Politique de confidentialité — DeathSearchFrance</title>
+  <meta name="description" content="Politique de confidentialité de l'application DeathSearchFrance — aucune donnée personnelle collectée, aucun compte, aucun tracking." />
+  <style>
+    :root {
+      --bg: #0e0f12; --surface: #171a1f; --border: #262b33;
+      --text: #eef1f5; --muted: #9aa4b2; --accent: #c0563f; --link: #7fb0ff;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f6f7f9; --surface:#ffffff; --border:#e3e6ea; --text:#161a1f; --muted:#586173; --accent:#a5442f; --link:#2757c9; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 22px 96px; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 22px; margin-bottom: 28px; }
+    .badge { display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+      color:#fff; background:var(--accent); padding:4px 10px; border-radius:999px; font-weight:700; }
+    h1 { font-size: clamp(1.7rem, 1.2rem + 2.4vw, 2.5rem); margin:.5em 0 .2em; line-height:1.15; }
+    h2 { font-size: 1.2rem; margin: 2em 0 .5em; color: var(--text); }
+    h2 .n { color: var(--accent); font-variant-numeric: tabular-nums; margin-right:.4em; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    a { color: var(--link); }
+    .card { background: var(--surface); border:1px solid var(--border); border-radius:16px; padding:18px 20px; margin:14px 0; }
+    table { width:100%; border-collapse: collapse; margin:12px 0; font-size:.95rem; display:block; overflow-x:auto; }
+    th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+    th { color: var(--muted); font-weight:600; white-space:nowrap; }
+    code { background: color-mix(in srgb, var(--accent) 16%, transparent); padding:1px 6px; border-radius:6px; font-size:.9em; }
+    ul { padding-left: 1.2em; }
+    footer { margin-top: 48px; border-top:1px solid var(--border); padding-top:18px; color:var(--muted); font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">Confidentialité</span>
+      <h1>Politique de confidentialité — DeathSearchFrance</h1>
+      <p class="muted">Application Android indépendante et non officielle<br />
+        Dernière mise à jour : 23 juillet 2026</p>
+    </header>
+
+    <p>La présente politique explique comment l'application <strong>DeathSearchFrance</strong>
+      (« l'application ») traite les données. En résumé : <strong>aucun compte, aucun tracking publicitaire,
+      aucune télémétrie, et toutes vos données restent sur votre appareil.</strong></p>
+
+    <h2><span class="n">1.</span>Confidentialité et données personnelles</h2>
+    <div class="card">
+      <p>L'application <strong>ne collecte, ne transmet ni ne partage aucune donnée personnelle</strong> vous concernant.</p>
+      <table>
+        <tbody>
+          <tr><th>Stockage</th><td>Toutes les données sont stockées uniquement sur cet appareil.</td></tr>
+          <tr><th>Réseau</th><td>Seules les requêtes de découverte de fichiers et les avis en temps réel nécessitent internet.</td></tr>
+          <tr><th>Recherches</th><td>Vos recherches, favoris et notes ne quittent jamais l'appareil.</td></tr>
+          <tr><th>Identifiant</th><td>Aucun compte, aucun identifiant, aucune télémétrie, aucune publicité.</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">Les données INSEE que vous importez sont des données publiques. Vous pouvez les supprimer à tout
+        moment depuis l'écran d'import.</p>
+    </div>
+
+    <h2><span class="n">2.</span>Sources des données</h2>
+    <p>L'application utilise le fichier des personnes décédées publié par l'INSEE et mis à disposition sur
+      <a href="https://www.data.gouv.fr" target="_blank" rel="noopener">data.gouv.fr</a> sous Licence Ouverte Etalab v2.0.
+      Ces données proviennent des actes de décès transmis aux communes, puis centralisés par l'INSEE ; elles couvrent
+      les décès survenus en France depuis 1970 environ.</p>
+    <table>
+      <tbody>
+        <tr><th>Source principale</th><td>data.gouv.fr / INSEE</td></tr>
+        <tr><th>Licence</th><td>Licence Ouverte Etalab v2.0</td></tr>
+        <tr><th>Mise à jour</th><td>Mensuelle (dépend du fichier importé)</td></tr>
+        <tr><th>Avis en temps réel</th><td>API publique <a href="https://matchid.io" target="_blank" rel="noopener">matchID.io</a>, qui réindexe le même jeu de données INSEE</td></tr>
+      </tbody>
+    </table>
+
+    <h2><span class="n">3.</span>Droit d'opposition (RGPD)</h2>
+    <p>Le fichier INSEE des personnes décédées est une donnée publique. Toutefois, certaines personnes peuvent avoir
+      exercé un droit d'opposition à la diffusion de leurs informations. Les fiches marquées « opposition » dans les
+      fichiers importés sont <strong>automatiquement exclues</strong> des résultats de recherche affichés dans l'application.</p>
+    <p>Pour exercer un droit d'accès, de rectification ou d'opposition concernant des données personnelles présentes dans
+      le fichier INSEE, adressez-vous directement à l'INSEE via
+      <a href="https://www.data.gouv.fr" target="_blank" rel="noopener">data.gouv.fr</a>.</p>
+
+    <h2><span class="n">4.</span>Usage éthique</h2>
+    <p>Ces données concernent des personnes réelles décédées. Leur utilisation doit rester respectueuse et limitée à des
+      finalités légitimes : généalogie, recherche familiale, journalisme ou recherche académique. Toute utilisation à des
+      fins commerciales, de démarchage, ou susceptible de porter atteinte à la dignité des personnes ou à la vie privée
+      de leurs proches est proscrite.</p>
+
+    <h2><span class="n">5.</span>Déni de responsabilité</h2>
+    <p>Cette application est indépendante et non officielle. Elle ne représente ni n'est affiliée à l'INSEE, data.gouv.fr,
+      ou toute autre administration. Les données issues du fichier INSEE sont publiques mais peuvent être incomplètes, en
+      retard ou erronées. Seul l'acte de décès officiel délivré par la mairie compétente a valeur juridique ; l'application
+      ne peut en aucun cas se substituer à une démarche d'état civil officielle.</p>
+
+    <h2><span class="n">6.</span>Enfants</h2>
+    <p>L'application n'est pas destinée aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant.</p>
+
+    <h2><span class="n">7.</span>Modifications</h2>
+    <p>Cette politique peut être mise à jour ponctuellement. La date de « dernière mise à jour » en haut de page indique
+      la version en vigueur.</p>
+
+    <h2><span class="n">8.</span>Contact</h2>
+    <div class="card">
+      <p>Pour toute question relative à la confidentialité :<br />
+        <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a></p>
+    </div>
+
+    <footer>© 2026 DeathSearchFrance — Application indépendante, non officielle · Données INSEE sous Licence Ouverte Etalab v2.0</footer>
+  </div>
+</body>
+</html>
