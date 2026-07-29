@@ -57,7 +57,7 @@
         <tr><th>Compte utilisateur</th><td>Pseudo, adresse e-mail et avatar optionnel. Nécessaires à la création du compte et au classement multijoueur.</td></tr>
         <tr><th>Progression de jeu</th><td>Niveaux terminés, scores, compétences, missions, succès et inventaire. Stockés localement (SQLite) et synchronisés en cloud si vous êtes connecté.</td></tr>
         <tr><th>Informations techniques</th><td>Version de l'application, modèle d'appareil et version Android, pour le diagnostic de compatibilité. Jamais associées à votre identité.</td></tr>
-        <tr><th>Rapports de plantage</th><td>Via Firebase Crashlytics, anonymisés. Aucune donnée personnelle n'y est transmise.</td></tr>
+        <tr><th>Télémétrie</th><td>Aucune. L'application n'embarque ni SDK d'analytique comportementale, ni rapport de plantage automatique.</td></tr>
       </tbody>
     </table>
     <p class="muted">Jouer sans compte est possible : sans connexion, la progression reste sur l'appareil et
@@ -94,7 +94,7 @@
     <h2><span class="n">4.</span>Partage des données</h2>
     <table>
       <tbody>
-        <tr><th>Firebase (Google)</th><td>Authentification (Firebase Auth) et rapports de plantage anonymes (Crashlytics).</td></tr>
+        <tr><th>Firebase (Google)</th><td>Authentification (Firebase Auth), sauvegarde du profil (Firestore, Realtime Database) et configuration à distance (Remote Config).</td></tr>
         <tr><th>Google AdMob</th><td>Diffusion et mesure des annonces natives (voir section 2).</td></tr>
         <tr><th>Render.com</th><td>Serveur de jeu multijoueur (États-Unis). Seuls votre pseudo et votre score de partie en temps réel y sont transmis.</td></tr>
       </tbody>
