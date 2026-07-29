@@ -57,7 +57,8 @@
         <tr><th>Compte utilisateur</th><td>Pseudo, adresse e-mail et avatar optionnel. Nécessaires à la création du compte et au classement multijoueur.</td></tr>
         <tr><th>Progression de jeu</th><td>Niveaux terminés, scores, compétences, missions, succès et inventaire. Stockés localement (SQLite) et synchronisés en cloud si vous êtes connecté.</td></tr>
         <tr><th>Informations techniques</th><td>Version de l'application, modèle d'appareil et version Android, pour le diagnostic de compatibilité. Jamais associées à votre identité.</td></tr>
-        <tr><th>Télémétrie</th><td>Aucune. L'application n'embarque ni SDK d'analytique comportementale, ni rapport de plantage automatique.</td></tr>
+        <tr><th>Rapports de plantage</th><td>Via Firebase Crashlytics : trace technique du plantage, modèle d'appareil, version d'Android, associés à un identifiant d'installation. <strong>Activés par défaut</strong>, désactivables dans <code>Paramètres &rarr; Confidentialité</code>.</td></tr>
+        <tr><th>Analyse d'usage</th><td>Via Firebase Analytics : événements d'utilisation et identifiant publicitaire. <strong>Désactivée par défaut</strong>, activable dans le même écran.</td></tr>
       </tbody>
     </table>
     <p class="muted">Jouer sans compte est possible : sans connexion, la progression reste sur l'appareil et
@@ -94,7 +95,7 @@
     <h2><span class="n">4.</span>Partage des données</h2>
     <table>
       <tbody>
-        <tr><th>Firebase (Google)</th><td>Authentification (Firebase Auth), sauvegarde du profil (Firestore, Realtime Database) et configuration à distance (Remote Config).</td></tr>
+        <tr><th>Firebase (Google)</th><td>Authentification (Auth), sauvegarde du profil (Firestore, Realtime Database), configuration à distance (Remote Config), rapports de plantage (Crashlytics) et, si vous l'avez activée, analyse d'usage (Analytics).</td></tr>
         <tr><th>Google AdMob</th><td>Diffusion et mesure des annonces natives (voir section 2).</td></tr>
         <tr><th>Render.com</th><td>Serveur de jeu multijoueur (États-Unis). Seuls votre pseudo et votre score de partie en temps réel y sont transmis.</td></tr>
       </tbody>
@@ -119,7 +120,7 @@
         <tr><th>Rectification</th><td>Pseudo et e-mail modifiables depuis <code>Paramètres → Compte utilisateur</code>.</td></tr>
         <tr><th>Effacement</th><td>Suppression définitive du compte depuis <code>Paramètres → Compte → Supprimer le compte</code>. Données effacées sous 7 jours.</td></tr>
         <tr><th>Portabilité</th><td>Sur demande, export JSON de vos données de progression et de compte.</td></tr>
-        <tr><th>Opposition</th><td>Collecte analytique, notifications et consentement publicitaire désactivables depuis les paramètres de l'application.</td></tr>
+        <tr><th>Opposition</th><td>Analyse d'usage, rapports de plantage, notifications et consentement publicitaire tous désactivables depuis <code>Paramètres &rarr; Confidentialité</code>.</td></tr>
       </tbody>
     </table>
 
