@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil — PodcastApp</title>
+  <meta name="description" content="Retrouvez les écoutes, playlists et recommandations de ce profil dans PodcastApp." />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="../assets/deeplink.css" />
+</head>
+<body data-section="profile">
+  <main>
+    <span class="badge">Profil</span>
+    <h1>Ce profil s'ouvre dans l'application</h1>
+    <p id="target" hidden></p>
+    <p>Retrouvez les écoutes, playlists et recommandations de ce profil dans PodcastApp.</p>
+    <div class="actions">
+      <a class="btn primary" id="open" href="podcastapp://profile">Ouvrir dans PodcastApp</a>
+      <a class="btn secondary" href="https://play.google.com/store/apps/details?id=com.jacquesmontahut.podcast.audio">Installer depuis Google Play</a>
+    </div>
+    <footer>
+      <a href="../">PodcastApp</a> · <a href="https://zeptoniator.github.io">Toutes les applications</a>
+    </footer>
+  </main>
+  <script src="../assets/deeplink.js"></script>
+</body>
+</html>

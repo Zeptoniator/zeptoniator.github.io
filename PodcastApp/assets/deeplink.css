@@ -1,0 +1,105 @@
+:root {
+  --bg: #0d0d14;
+  --surface: #16161f;
+  --border: #2a2a3a;
+  --text: #f2efff;
+  --muted: #a6a3bd;
+  --accent: #d4a843;
+  --link: #8fb8ff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f6fb;
+    --surface: #ffffff;
+    --border: #e4e2ee;
+    --text: #1a1826;
+    --muted: #5b586e;
+    --accent: #a8801f;
+    --link: #2757c9;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  width: 100%;
+  max-width: 30rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #1a1400;
+  background: var(--accent);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 1.1rem + 1.8vw, 2rem);
+  margin: .6em 0 .2em;
+  line-height: 1.2;
+}
+
+p { color: var(--muted); margin: 0 0 1.2em; }
+
+#target {
+  color: var(--text);
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.actions { display: grid; gap: 12px; margin-top: 24px; }
+
+a.btn {
+  display: block;
+  padding: 14px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  transition: transform .15s ease, border-color .15s ease;
+}
+
+a.btn:hover { transform: translateY(-2px); border-color: var(--accent); }
+a.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+a.btn.primary {
+  background: var(--accent);
+  color: #1a1400;
+  border-color: transparent;
+}
+
+a.btn.secondary { background: transparent; color: var(--link); }
+
+footer {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+footer a { color: var(--link); }

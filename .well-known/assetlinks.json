@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jacquesmontahut.podcast.audio",
+      "sha256_cert_fingerprints": [
+        "C9:8E:39:C8:79:06:B5:32:BC:BC:92:4F:DA:97:EE:6F:0D:2E:5C:4D:78:40:5C:28:02:1E:B5:B5:C0:66:CC:26",
+        "69:33:BD:56:86:10:8D:CD:3D:34:BF:7F:BB:6E:84:C8:17:A9:43:36:8C:92:E5:DD:25:51:1B:77:79:F9:D2:54"
+      ]
+    }
+  }
+]
