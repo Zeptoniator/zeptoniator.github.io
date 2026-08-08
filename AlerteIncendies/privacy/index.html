@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Politique de confidentialité - Alerte Incendies</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --ink: #14181f;
+      --muted: #5b6472;
+      --paper: #ffffff;
+      --surface: #f2f5f9;
+      --blue: #b4531b;
+      --accent: #0e9f6e;
+      --line: #d8dfe8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    main { width: min(920px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+    header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding-bottom: 24px; }
+    .badge {
+      display: inline-block;
+      border: 1px solid color-mix(in srgb, var(--blue), white 58%);
+      border-radius: 999px;
+      color: var(--blue);
+      font-size: .88rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      margin-bottom: 14px;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.05; margin: 0 0 12px; letter-spacing: 0; }
+    h2 { color: var(--blue); font-size: 1.35rem; margin: 32px 0 10px; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px; padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    .card { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 20px; margin: 24px 0; }
+    .warn { background: color-mix(in srgb, var(--blue), white 92%); border-color: color-mix(in srgb, var(--blue), white 70%); }
+    .muted { color: var(--muted); }
+    a { color: var(--blue); font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="badge">Alerte Incendies</span>
+      <h1>Politique de confidentialité</h1>
+      <p class="muted">Dernière mise à jour : août 2026</p>
+    </header>
+
+    <div class="card warn">
+      <p><strong>Alerte Incendies est une application indépendante.</strong> Elle n'est ni un service officiel, ni un service de secours, et n'est affiliée à aucune administration. En cas d'urgence, appelez le 18 ou le 112.</p>
+    </div>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>La présente politique décrit comment l'application Alerte Incendies collecte, utilise et protège vos données personnelles.</p>
+      <p>L'essentiel de l'application fonctionne sans compte : consultation du risque, de la carte, de la qualité de l'air et des consignes de sécurité. La création d'un compte est facultative et sert aux fonctionnalités communautaires.</p>
+    </section>
+
+    <section>
+      <h2>2. Position géographique</h2>
+      <p>L'application demande l'accès à votre position (approximative ou précise) pour vous montrer le risque, les incidents et la qualité de l'air autour de vous, et pour centrer la carte. L'autorisation est demandée au moment où elle est utile, et vous pouvez la refuser : l'application reste utilisable en choisissant une commune manuellement.</p>
+      <p>Votre position est utilisée sur l'appareil et pour interroger les services de données. Elle n'est pas publiée sur votre profil : les autres utilisateurs ne voient que des codes de département, jamais une position exacte.</p>
+    </section>
+
+    <section>
+      <h2>3. Données collectées</h2>
+      <p><strong>Sans compte</strong>, vos préférences, zones suivies, consignes hors ligne et réglages de notifications sont stockés localement sur votre appareil.</p>
+      <p><strong>Si vous créez un compte</strong> (e-mail et mot de passe, ou connexion Google), les données suivantes sont enregistrées dans Firebase :</p>
+      <ul>
+        <li>votre adresse e-mail et votre identifiant de compte ;</li>
+        <li>votre profil public : pseudo, courte description, emblème, couleur et forme d'avatar ;</li>
+        <li>les départements que vous choisissez d'afficher sur votre profil ;</li>
+        <li>les signalements d'incidents que vous publiez, avec leur description, leur horodatage, leur position et, si vous en ajoutez une, leur photo ;</li>
+        <li>vos interactions communautaires (confirmations, commentaires) sur les signalements.</li>
+      </ul>
+      <p>Votre profil public, vos signalements et vos interactions sont visibles par les autres utilisateurs. Ne publiez pas d'informations personnelles dans votre pseudo, votre description ou vos signalements, et ne photographiez pas de personnes identifiables.</p>
+    </section>
+
+    <section>
+      <h2>4. Données non collectées</h2>
+      <p>L'application ne collecte pas vos contacts, votre microphone, vos données biométriques ni vos informations bancaires. Les photos ne sont utilisées que si vous en joignez une à un signalement.</p>
+      <p>L'application ne contient aucune publicité et aucun achat intégré. Aucun identifiant publicitaire n'est utilisé.</p>
+    </section>
+
+    <section>
+      <h2>5. Notifications</h2>
+      <p>L'application peut vous envoyer des notifications : niveau de danger quotidien, alertes de qualité de l'air et informations sur les zones que vous suivez. Un jeton de notification (Firebase Cloud Messaging) est associé à votre appareil pour les acheminer.</p>
+      <p>Vous pouvez refuser les notifications à l'installation, désactiver chaque catégorie dans les réglages de l'application, ou les couper dans les paramètres Android.</p>
+    </section>
+
+    <section>
+      <h2>6. Services tiers</h2>
+      <p><strong>Firebase (Google LLC)</strong> : Authentication, Cloud Firestore, Cloud Messaging et App Check, pour l'authentification, le stockage des profils et signalements, l'envoi des notifications et la protection contre les abus. Politique de confidentialité : <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+      <p><strong>Connexion Google</strong> : utilisée uniquement pour vous identifier. L'application reçoit votre adresse e-mail et votre nom d'affichage, et n'accède à aucune autre donnée de votre compte Google.</p>
+      <p><strong>Sources de données publiques</strong> : les niveaux de risque, la qualité de l'air et les fonds de carte proviennent de services publics ou ouverts, interrogés depuis votre appareil. Ces requêtes contiennent la zone géographique consultée, mais aucune donnée de compte.</p>
+    </section>
+
+    <section>
+      <h2>7. Utilisation des données</h2>
+      <p>Vos données servent à vous authentifier, à afficher des informations pertinentes pour votre zone, à faire fonctionner les signalements communautaires et à vous envoyer les notifications que vous avez activées.</p>
+      <p>Vos données ne sont jamais vendues ni louées à des tiers, et ne sont utilisées à aucune fin publicitaire.</p>
+    </section>
+
+    <section>
+      <h2>8. Conservation des données</h2>
+      <p>Les données locales sont conservées sur votre appareil jusqu'à la désinstallation de l'application ou l'effacement de ses données.</p>
+      <p>Les données de compte et les signalements sont conservés tant que votre compte est actif.</p>
+    </section>
+
+    <section>
+      <h2>9. Suppression de votre compte</h2>
+      <p>Vous pouvez supprimer votre compte et les données associées depuis l'application, dans les réglages du compte.</p>
+      <p>La procédure détaillée, ainsi qu'une méthode alternative par e-mail, sont décrites sur la page <a href="../account-deletion/">Suppression de compte</a>.</p>
+    </section>
+
+    <section>
+      <h2>10. Vos droits</h2>
+      <p>Conformément au RGPD, vous disposez de droits d'accès, de rectification, d'effacement, de portabilité et d'opposition au traitement.</p>
+      <p>Pour exercer ces droits, contactez-nous à : <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>11. Sécurité</h2>
+      <p>Nous mettons en œuvre des mesures techniques appropriées : communications chiffrées en HTTPS, stockage sécurisé Firebase, règles d'accès restreignant chaque profil à son propriétaire et vérification d'intégrité des appareils (App Check).</p>
+    </section>
+
+    <section>
+      <h2>12. Mineurs</h2>
+      <p>Alerte Incendies n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données personnelles provenant d'enfants de moins de 13 ans. Si vous estimez qu'un enfant nous a transmis des données, contactez-nous afin que nous les supprimions.</p>
+    </section>
+
+    <section>
+      <h2>13. Modifications</h2>
+      <p>Cette politique peut être mise à jour. La version en vigueur est celle disponible sur cette page web.</p>
+    </section>
+
+    <div class="card">
+      <p><strong>Contact :</strong> <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a></p>
+      <p class="muted">Application Alerte Incendies, package Android com.jacquesmontahut.alerteincendies.</p>
+    </div>
+  </main>
+</body>
+</html>
