@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suppression du compte — TestHive</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --ink: #201b16;
+      --muted: #665d54;
+      --paper: #fffbf5;
+      --surface: #f3e6da;
+      --brand: #9a5a0b;
+      --accent: #17683c;
+      --line: #d5c3b5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #ede0d4; --muted: #d5c3b5; --paper: #201b16;
+        --surface: #15100b; --brand: #ffb870; --accent: #8ad9a4; --line: #4d453d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--surface); color: var(--ink); line-height: 1.65; }
+    main { width: min(880px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+    header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding-bottom: 24px; }
+    .badge { display: inline-block; border: 1px solid var(--brand); border-radius: 999px;
+      color: var(--brand); font-size: .85rem; font-weight: 700; padding: 4px 12px; margin-bottom: 14px; }
+    h1 { font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.1; margin: 0 0 12px; }
+    h2 { color: var(--brand); font-size: 1.3rem; margin: 34px 0 10px; }
+    h3 { font-size: 1.05rem; margin: 22px 0 6px; }
+    p, li { margin: 0 0 12px; }
+    ul { padding-left: 22px; }
+    section.card { background: var(--paper); border: 1px solid var(--line);
+      border-radius: 16px; padding: 20px 24px; margin: 20px 0; }
+    .lang { color: var(--muted); font-size: .85rem; text-transform: uppercase;
+      letter-spacing: .12em; font-weight: 700; margin-top: 48px; }
+    footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 20px;
+      color: var(--muted); font-size: .9rem; }
+    a { color: var(--brand); }
+    code { background: var(--surface); padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="badge">TestHive</span>
+    <h1>Suppression du compte</h1>
+    <p>Dernière mise à jour : 9 août 2026 · Version 1</p>
+  </header>
+
+  <h2>Depuis l'application</h2>
+  <ol>
+    <li>Ouvrez TestHive et connectez-vous.</li>
+    <li>Onglet <strong>Profil</strong> → <strong>Paramètres</strong> → <strong>Centre de confidentialité</strong>.</li>
+    <li><strong>Supprimer mon compte</strong>, puis confirmez.</li>
+  </ol>
+
+  <h2>Ce qui est supprimé</h2>
+  <ul>
+    <li>Votre compte d'authentification et votre adresse e-mail.</li>
+    <li>Votre profil : pseudo, nom affiché, avatar, pays, langues, appareil déclaré, consentements.</li>
+    <li>Votre réservation de pseudo, qui redevient disponible.</li>
+    <li>Vos brouillons d'applications.</li>
+  </ul>
+
+  <h2>Ce qui est conservé, et pourquoi</h2>
+  <p>Les rapports de test et de bug que vous avez rédigés restent accessibles au développeur concerné, <strong>avec votre identité anonymisée</strong>. Deux raisons : les supprimer détruirait le travail sur lequel d'autres développeurs s'appuient pour corriger leur application, et cela permettrait d'effacer un rapport défavorable en fermant simplement son compte.</p>
+
+  <h2>Sans passer par l'application</h2>
+  <p>Écrivez à <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a> depuis l'adresse e-mail du compte. Nous répondons sous 30 jours.</p>
+
+  <p class="lang">English version</p>
+  <h2>Deleting your account</h2>
+  <p>In the app: <strong>Profile → Settings → Privacy Centre → Delete my account</strong>.</p>
+  <p><strong>Deleted:</strong> your authentication account and email, your profile, your username claim, your draft applications.</p>
+  <p><strong>Kept, with your identity anonymised:</strong> the test and bug reports you wrote. Removing them would destroy work other developers rely on, and would let someone erase an unfavourable report by closing their account.</p>
+  <p>Without the app: email <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a> from the account address. We reply within 30 days.</p>
+  <footer>
+    <p>TestHive · Jacques Montahut · <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a></p>
+    <p><a href="../privacy/">Confidentialité</a> · <a href="../terms/">Conditions</a> · <a href="../rules/">Règles de la communauté</a></p>
+  </footer>
+</main>
+</body>
+</html>

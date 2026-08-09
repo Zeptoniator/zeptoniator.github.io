@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Règles de la communauté — TestHive</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --ink: #201b16;
+      --muted: #665d54;
+      --paper: #fffbf5;
+      --surface: #f3e6da;
+      --brand: #9a5a0b;
+      --accent: #17683c;
+      --line: #d5c3b5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #ede0d4; --muted: #d5c3b5; --paper: #201b16;
+        --surface: #15100b; --brand: #ffb870; --accent: #8ad9a4; --line: #4d453d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--surface); color: var(--ink); line-height: 1.65; }
+    main { width: min(880px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+    header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding-bottom: 24px; }
+    .badge { display: inline-block; border: 1px solid var(--brand); border-radius: 999px;
+      color: var(--brand); font-size: .85rem; font-weight: 700; padding: 4px 12px; margin-bottom: 14px; }
+    h1 { font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.1; margin: 0 0 12px; }
+    h2 { color: var(--brand); font-size: 1.3rem; margin: 34px 0 10px; }
+    h3 { font-size: 1.05rem; margin: 22px 0 6px; }
+    p, li { margin: 0 0 12px; }
+    ul { padding-left: 22px; }
+    section.card { background: var(--paper); border: 1px solid var(--line);
+      border-radius: 16px; padding: 20px 24px; margin: 20px 0; }
+    .lang { color: var(--muted); font-size: .85rem; text-transform: uppercase;
+      letter-spacing: .12em; font-weight: 700; margin-top: 48px; }
+    footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 20px;
+      color: var(--muted); font-size: .9rem; }
+    a { color: var(--brand); }
+    code { background: var(--surface); padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="badge">TestHive</span>
+    <h1>Règles de la communauté</h1>
+    <p>Dernière mise à jour : 9 août 2026 · Version 1</p>
+  </header>
+
+  <section class="card">
+    <p><strong>Une seule règle compte vraiment :</strong> TestHive sert à organiser de <em>vrais</em> tests. Tout ce qui consiste à acheter, échanger ou réclamer une note ou un avis sur une boutique est interdit, détecté automatiquement, et refusé avant publication.</p>
+  </section>
+
+  <h2>Ce que vous pouvez demander</h2>
+  <ul>
+    <li>Tester une fonctionnalité précise.</li>
+    <li>Chercher et remonter des bugs.</li>
+    <li>Remplir un questionnaire.</li>
+    <li>Fournir une capture d'écran comme justificatif.</li>
+    <li>Donner un retour privé et honnête au développeur.</li>
+    <li>Rester inscrit au test fermé pendant toute la période — c'est une vraie exigence de Google Play, et elle est parfaitement légitime.</li>
+  </ul>
+
+  <h2>Ce qui est interdit</h2>
+  <ul>
+    <li><strong>Demander une note</strong> (« mettez 5 étoiles », « note maximale »).</li>
+    <li><strong>Demander un avis positif</strong> (« laissez un bon commentaire »).</li>
+    <li><strong>Récompenser une note ou un avis</strong> — de quelque manière que ce soit, y compris en Hive Points.</li>
+    <li><strong>Échanger des notes ou des avis</strong> (« je note la tienne, tu notes la mienne »).</li>
+    <li><strong>Manipuler les installations</strong> : fausses installations, gonflage des compteurs, installer puis désinstaller aussitôt.</li>
+    <li><strong>Faux comptes, bots, fermes d'émulateurs, clics automatiques.</strong> Les tests doivent être réalisés par de vraies personnes.</li>
+    <li><strong>Promettre que Google acceptera une application en production.</strong> Personne ne peut le garantir, et TestHive non plus.</li>
+    <li><strong>Acheter ou vendre des avis</strong>, sur la plateforme comme en dehors.</li>
+  </ul>
+
+  <h2>Comment c'est appliqué</h2>
+  <p>Chaque publication, mission et commentaire passe par une vérification automatique <strong>côté serveur</strong>, dans plusieurs langues, avant d'être enregistrée. Un refus vous indique la catégorie enfreinte et vous cite le passage en cause, pour que vous puissiez le reformuler.</p>
+  <p>La vérification tient compte du contexte : demander de tester un widget de notation, ou de noter la stabilité de 1 à 5 <em>dans TestHive</em>, est parfaitement autorisé. Ce sont des notes de test internes, pas des notes de boutique.</p>
+  <p>Les refus répétés sont visibles de la modération. Un compte peut être averti, suspendu, puis banni.</p>
+
+  <h2>Les Hive Points</h2>
+  <p>Ils récompensent uniquement du travail de test réellement effectué : un test terminé, un bug utile, un rapport validé. Ils ne s'échangent pas contre de l'argent et ne sont <strong>jamais</strong> attribués pour une note, un avis ou une installation.</p>
+
+  <h2>Signaler</h2>
+  <p>Chaque publication et commentaire porte une action « Signaler ». Utilisez-la : la modération automatique attrape les formulations connues, pas tout.</p>
+
+  <p class="lang">English version</p>
+
+  <h2>Community rules</h2>
+  <p><strong>One rule matters above all:</strong> TestHive exists to organise <em>real</em> testing. Anything that buys, swaps or solicits a store rating or review is forbidden, detected automatically, and refused before publication.</p>
+
+  <h3>You may ask for</h3>
+  <p>Testing a specific feature · finding and reporting bugs · filling in a questionnaire · a screenshot as proof of a task · honest private feedback to the developer · staying opted in for the whole closed-test period, which is a genuine Google Play requirement.</p>
+
+  <h3>You may never ask for</h3>
+  <p>A star rating · a positive public review · anything rewarding a rating or a review, including Hive Points · rating or review swaps · fake or inflated installs, or installing then uninstalling right away · fake accounts, bots, emulator farms, automated clicks · a promise that Google will approve an app for production · buying or selling reviews, on or off the platform.</p>
+
+  <h3>How this is enforced</h3>
+  <p>Every post, task and comment passes a <strong>server-side</strong> automated check, in several languages, before it is stored. A refusal names the category and quotes the offending sentence so you can rewrite it. The check is context-aware: asking someone to test a rating widget, or to score stability from 1 to 5 <em>inside TestHive</em>, is fine — those are internal test notes, not store ratings.</p>
+
+  <h3>Hive Points</h3>
+  <p>They reward real testing work only: a completed test, a useful bug, a validated report. They cannot be exchanged for money and are <strong>never</strong> awarded for a rating, a review or an install.</p>
+  <footer>
+    <p>TestHive · Jacques Montahut · <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a></p>
+    <p><a href="../privacy/">Confidentialité</a> · <a href="../terms/">Conditions</a> · <a href="../rules/">Règles de la communauté</a></p>
+  </footer>
+</main>
+</body>
+</html>

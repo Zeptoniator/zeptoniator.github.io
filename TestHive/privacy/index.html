@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Politique de confidentialité — TestHive</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --ink: #201b16;
+      --muted: #665d54;
+      --paper: #fffbf5;
+      --surface: #f3e6da;
+      --brand: #9a5a0b;
+      --accent: #17683c;
+      --line: #d5c3b5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #ede0d4; --muted: #d5c3b5; --paper: #201b16;
+        --surface: #15100b; --brand: #ffb870; --accent: #8ad9a4; --line: #4d453d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--surface); color: var(--ink); line-height: 1.65; }
+    main { width: min(880px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+    header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding-bottom: 24px; }
+    .badge { display: inline-block; border: 1px solid var(--brand); border-radius: 999px;
+      color: var(--brand); font-size: .85rem; font-weight: 700; padding: 4px 12px; margin-bottom: 14px; }
+    h1 { font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.1; margin: 0 0 12px; }
+    h2 { color: var(--brand); font-size: 1.3rem; margin: 34px 0 10px; }
+    h3 { font-size: 1.05rem; margin: 22px 0 6px; }
+    p, li { margin: 0 0 12px; }
+    ul { padding-left: 22px; }
+    section.card { background: var(--paper); border: 1px solid var(--line);
+      border-radius: 16px; padding: 20px 24px; margin: 20px 0; }
+    .lang { color: var(--muted); font-size: .85rem; text-transform: uppercase;
+      letter-spacing: .12em; font-weight: 700; margin-top: 48px; }
+    footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 20px;
+      color: var(--muted); font-size: .9rem; }
+    a { color: var(--brand); }
+    code { background: var(--surface); padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="badge">TestHive</span>
+    <h1>Politique de confidentialité</h1>
+    <p>Dernière mise à jour : 9 août 2026 · Version 1</p>
+  </header>
+
+  <section class="card">
+    <p><strong>En résumé.</strong> TestHive coordonne de vrais tests fermés entre développeurs. Nous collectons ce que vous saisissez pour faire fonctionner ce service, rien de plus. Vos données sont hébergées <strong>dans l'Union européenne</strong>. Vous pouvez supprimer votre compte depuis l'application, et la suppression est réelle.</p>
+    <p><strong>Ce que TestHive ne fait pas :</strong> nous n'avons aucun accès à votre Google Play Console, nous ne lisons aucune donnée de la boutique, et nous ne pouvons pas savoir ce que vous faites dans une autre application.</p>
+  </section>
+
+  <h2>1. Responsable du traitement</h2>
+  <p>Jacques Montahut, développeur indépendant. Contact : <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a>.</p>
+
+  <h2>2. Données collectées</h2>
+
+  <h3>Compte</h3>
+  <ul>
+    <li>Adresse e-mail et identifiant technique, fournis par Firebase Authentication (connexion par e-mail ou par Google).</li>
+    <li>Nous ne voyons jamais votre mot de passe Google ni celui de votre compte TestHive.</li>
+  </ul>
+
+  <h3>Profil</h3>
+  <ul>
+    <li>Pseudo, nom affiché, avatar facultatif.</li>
+    <li>Pays et langue, pré-remplis depuis les réglages de votre appareil et modifiables.</li>
+    <li>Expérience Android et catégories d'applications déclarées par vous.</li>
+    <li>Appareil de test : marque, modèle et version d'Android. <strong>Facultatif</strong> : une case décochable au moment de la création du profil.</li>
+    <li>Vos consentements, avec la date à laquelle vous les avez donnés.</li>
+  </ul>
+
+  <h3>Activité de test</h3>
+  <ul>
+    <li>Applications que vous déclarez : nom, identifiant de package, liens Play, description, consignes de test.</li>
+    <li>Missions qui vous sont attribuées, checklists cochées, durée mesurée par le chronomètre facultatif de l'application.</li>
+    <li>Rapports de test : quatre notes internes (stabilité, ergonomie, performance, compréhension) et un commentaire privé destiné au développeur.</li>
+    <li>Rapports de bug, avec le modèle de votre appareil, sa version d'Android et la taille de son écran. <strong>Aucun identifiant permettant de vous distinguer n'est collecté</strong> : ni ANDROID_ID, ni identifiant publicitaire, ni numéro de série.</li>
+    <li>Captures d'écran que vous joignez volontairement. Elles sont <strong>débarrassées de leurs métadonnées sur votre appareil</strong> — localisation comprise — puis redimensionnées et recompressées <em>avant</em> tout envoi. Le fichier d'origine ne quitte jamais votre téléphone.</li>
+  </ul>
+
+  <h3>Communauté</h3>
+  <ul>
+    <li>Publications, commentaires et « j'aime » dans le Hub.</li>
+    <li>Signalements que vous effectuez.</li>
+  </ul>
+
+  <h3>Technique</h3>
+  <ul>
+    <li>Rapports de plantage (Firebase Crashlytics) et statistiques d'usage agrégées (Firebase Analytics). Aucune donnée personnelle sensible n'y est envoyée.</li>
+    <li>Jeton de notification (Firebase Cloud Messaging) si vous autorisez les notifications.</li>
+  </ul>
+
+  <h2>3. Finalités et bases légales</h2>
+  <ul>
+    <li><strong>Exécution du service</strong> (article 6.1.b RGPD) : compte, profil, attribution des missions, rapports, Hives.</li>
+    <li><strong>Intérêt légitime</strong> (6.1.f) : sécurité, prévention de la fraude, modération automatique des contenus publics, mesure de stabilité technique.</li>
+    <li><strong>Consentement</strong> (6.1.a) : captures d'écran, partage de votre appareil de test, e-mails produit, notifications. Chacun est refusable et retirable sans perdre l'accès au service.</li>
+  </ul>
+
+  <h2>4. Qui voit quoi</h2>
+  <ul>
+    <li>Votre <strong>profil public</strong> (pseudo, avatar, réputation) est visible des autres membres.</li>
+    <li>Vos <strong>rapports de test et commentaires privés</strong> ne sont visibles que par le développeur de l'application concernée.</li>
+    <li>Vos <strong>captures d'écran</strong> sont visibles par vous, par le développeur de l'application documentée, et par la modération.</li>
+    <li>Votre <strong>adresse e-mail</strong> n'est jamais affichée aux autres membres.</li>
+  </ul>
+
+  <h2>5. Hébergement et localisation</h2>
+  <p>Les données sont hébergées par Google Cloud / Firebase :</p>
+  <ul>
+    <li>Base de données : multi-région <strong>Europe</strong> (<code>eur3</code>).</li>
+    <li>Fichiers (captures d'écran) : multi-région <strong>Union européenne</strong>.</li>
+    <li>Fonctions serveur : <code>europe-west1</code> (Belgique).</li>
+  </ul>
+  <p>Ce choix est délibéré : l'offre gratuite de stockage n'était disponible qu'aux États-Unis, et nous avons préféré payer pour rester en Europe.</p>
+
+  <h2>6. Durée de conservation</h2>
+  <ul>
+    <li>Compte et profil : tant que le compte existe.</li>
+    <li>Rapports de test et de bug : conservés après la suppression de votre compte, <strong>avec l'auteur anonymisé</strong>. Les supprimer détruirait le travail sur lequel d'autres développeurs s'appuient, et permettrait d'effacer un rapport défavorable en fermant son compte.</li>
+    <li>Brouillons d'applications et réservation de pseudo : supprimés avec le compte.</li>
+    <li>Journaux de plantage : 90 jours (durée par défaut de Crashlytics).</li>
+  </ul>
+
+  <h2>7. Vos droits</h2>
+  <p>Vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité.</p>
+  <ul>
+    <li><strong>Rectification</strong> : directement dans l'application, écran Profil.</li>
+    <li><strong>Effacement</strong> : Profil → Paramètres → Centre de confidentialité → Supprimer mon compte. La suppression déclenche une opération serveur qui retire réellement le profil, la réservation de pseudo et vos brouillons — ce n'est pas un simple masquage.</li>
+    <li><strong>Retrait d'un consentement</strong> : Centre de confidentialité, à tout moment.</li>
+    <li>Pour tout le reste : <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a>.</li>
+  </ul>
+  <p>Vous pouvez introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>).</p>
+
+  <h2>8. Enfants</h2>
+  <p>TestHive s'adresse à des développeurs et n'est pas destiné aux personnes de moins de 16 ans.</p>
+
+  <h2>9. Modifications</h2>
+  <p>Toute modification substantielle sera signalée dans l'application et vous serez invité à en prendre connaissance.</p>
+
+  <p class="lang">English version</p>
+
+  <h2>Privacy Policy — summary</h2>
+  <p>TestHive coordinates real Google Play closed tests between developers. We collect what you type in, to run that service, and nothing more. <strong>Your data is hosted in the European Union.</strong> You can delete your account from the app, and the deletion is real.</p>
+  <p><strong>What TestHive does not do:</strong> we have no access to your Google Play Console, we read no store data, and we cannot observe what you do inside another app.</p>
+
+  <h3>Data we collect</h3>
+  <ul>
+    <li><strong>Account</strong>: email address and a technical id, from Firebase Authentication. We never see any password.</li>
+    <li><strong>Profile</strong>: username, display name, optional avatar, country, language, self-declared Android experience and test device (optional, an unticked box).</li>
+    <li><strong>Testing activity</strong>: applications you declare, assignments, checklists, the optional in-app stopwatch, test reports (four internal scores plus a private comment to the developer).</li>
+    <li><strong>Bug reports</strong>: with your device model, Android version and screen size. <strong>No identifier that could single you out</strong> — no ANDROID_ID, advertising id or serial number.</li>
+    <li><strong>Screenshots you attach</strong>: stripped of all metadata <strong>on your device</strong> — location included — then resized and recompressed <em>before</em> upload. The original file never leaves your phone.</li>
+    <li><strong>Community</strong>: posts, comments, likes, reports you file.</li>
+    <li><strong>Technical</strong>: crash reports (Crashlytics), aggregated usage analytics, a push token if you allow notifications.</li>
+  </ul>
+
+  <h3>Who sees what</h3>
+  <p>Your public profile is visible to members. Your test reports and private comments are visible only to the developer of the application concerned. Your screenshots are visible to you, that developer, and moderators. Your email address is never shown to other members.</p>
+
+  <h3>Hosting</h3>
+  <p>Google Cloud / Firebase: database in the <strong>Europe</strong> multi-region (<code>eur3</code>), files in the <strong>EU</strong> multi-region, server functions in <code>europe-west1</code>. Deliberate: the free storage tier was US-only and we chose to pay to stay in Europe.</p>
+
+  <h3>Retention</h3>
+  <p>Account and profile last as long as the account. Test and bug reports are kept after deletion <strong>with the author anonymised</strong>: removing them would destroy work other developers rely on, and would let someone erase an unfavourable report by closing their account.</p>
+
+  <h3>Your rights</h3>
+  <p>Access, rectification, erasure, restriction, objection and portability. Edit your profile in the app; delete your account from Profile → Settings → Privacy Centre; withdraw any consent at any time. For anything else: <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a>. You may lodge a complaint with the CNIL.</p>
+  <footer>
+    <p>TestHive · Jacques Montahut · <a href="mailto:serge.simono27@gmail.com">serge.simono27@gmail.com</a></p>
+    <p><a href="../privacy/">Confidentialité</a> · <a href="../terms/">Conditions</a> · <a href="../rules/">Règles de la communauté</a></p>
+  </footer>
+</main>
+</body>
+</html>
